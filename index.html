@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+</head>
+<body>
+
+    <h1>QR Code Generator</h1>
+
+    <!-- Input field for QR title -->
+    <label for="qrTitleInput">QR Title:</label>
+    <input type="text" id="qrTitleInput" placeholder="Enter QR code title" size="40">
+    <br>
+
+    <!-- Input field for QR data -->
+    <label for="dataInput">Enter Data for QR Code:</label>
+    <input type="text" id="dataInput" placeholder="Enter data here" size="40">
+    <br>
+
+    <!-- File input to choose a file (supports all files) -->
+    <label for="fileInput">Or Choose a File (any type):</label>
+    <input type="file" id="fileInput" accept="*/*">
+    <br>
+
+    <!-- Button to generate QR code -->
+    <button onclick="generateQRCode()">Generate QR Code</button>
+
+    <!-- Container for displaying multiple QR codes -->
+    <div id="qrcode-container"></div>
+
+   
+
+</body>
+</html>
